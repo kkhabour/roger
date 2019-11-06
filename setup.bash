@@ -101,7 +101,7 @@ ignoreip = 10.12.254.254" > /etc/fail2ban/jail.local
 
 echo "
 [Definition]
-failregex = ^<HOST> -.*\"(GET|POST).*
+failregex = ^<HOST> -.*\\\"(GET|POST).*
 ignoreregex =" > /etc/fail2ban/filter.d/http-get-dos.conf
 
 echo "
